@@ -1,4 +1,6 @@
-FROM nginx:1.17.8-alpine
+FROM nginx:latest
+
+COPY ./index.html /usr/share/nginx/html/index.html
 
 # Copy the public directory      
 COPY ./public/ /app/public/
