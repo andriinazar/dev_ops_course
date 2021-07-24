@@ -1,6 +1,5 @@
 FROM nginx:1.17.8-alpine
 
-
 # Copy the public directory      
 COPY ./public/ /app/public/
 

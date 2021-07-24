@@ -10,4 +10,5 @@ COPY . /app
 COPY ./public/index.php /var/www/html/
 
 VOLUME ["/app"]
+VOLUME ["/www:/var/www"]
 
