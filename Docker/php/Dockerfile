@@ -6,5 +6,8 @@ COPY ./php/php-fpm.conf /usr/local/etc/php-fpm.d/www.conf
 # Copy the application code
 COPY . /app
 
+# copy index file
+COPY ./public/index.php /var/www/html/
+
 VOLUME ["/app"]
 
