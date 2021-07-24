@@ -2,7 +2,7 @@ version: "3"
 
 services:
 
-  web:
+  nginx:
     build:
       context: . 
       dockerfile: nginx/Dockerfile
@@ -10,6 +10,7 @@ services:
       - "8080:80"
     volumes:
       - .:/app/
+      - ./www:/var/www
     links:
       - php
 
@@ -19,3 +20,4 @@ services:
       dockerfile: php/Dockerfile
     volumes:
       - .:/app/
+      - ./www:/var/www
