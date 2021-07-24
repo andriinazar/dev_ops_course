@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-COPY ./public/index.html /usr/share/nginx/html/index.html
+COPY .././public/index.html /usr/share/nginx/html/index.html
 
 # Copy the public directory      
 COPY ./public/ /app/public/
